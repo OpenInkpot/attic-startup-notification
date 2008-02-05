@@ -1,0 +1,32 @@
+Source: startup-notification
+Section: gui
+Priority: optional
+Maintainer: Sergey Lapin <slapin@slind.org>
+Standards-Version: 3.7.2.1
+Build-Depends: cdbs (>= 0.4.41), debhelper (>= 5), libx11-dev, libxt-dev, gnome-pkg-tools
+XCS-Cross-Build-Depends: libx11-dev, libxt-dev
+XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.41), cdbs-slind, debhelper (>= 5), gnome-pkg-tools
+
+Package: libstartup-notification0
+Section: gui
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for program launch feedback (shared library)
+ startup-notification is a library which allows programs to give the user
+ visual feedback that they are being launched; this is typically implemented
+ using a busy cursor. This library is currently used by GNOME programs, but
+ is part of the freedesktop.org suite of cross-desktop libraries.
+ .
+ This package contains the shared library.
+
+Package: libstartup-notification0-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libstartup-notification0 (= ${Source-Version}), libx11-dev
+Description: library for program launch feedback (development headers)
+ startup-notification is a library which allows programs to give the user
+ visual feedback that they are being launched; this is typically implemented
+ using a busy cursor. This library is currently used by GNOME programs, but
+ is part of the freedesktop.org suite of cross-desktop libraries.
+ .
+ This package contains the development headers.
