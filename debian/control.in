@@ -1,7 +1,7 @@
 Source: startup-notification
 Section: gui
 Priority: optional
-Maintainer: Sergey Lapin <slapin@slind.org>
+Maintainer: Yauhen Kharuzhy <jekhor@gmail.com>
 Standards-Version: 3.7.2.1
 Build-Depends: cdbs (>= 0.4.41), debhelper (>= 5), libx11-dev, libxt-dev, gnome-pkg-tools
 XCS-Cross-Build-Depends: libx11-dev, libxt-dev
