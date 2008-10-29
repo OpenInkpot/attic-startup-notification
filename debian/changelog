@@ -1,3 +1,9 @@
+startup-notification (0.9-1.slind1.oi1) asimov; urgency=low
+
+  * OI port
+
+ -- Yauhen Kharuzhy <jekhor@gmail.com>  Wed, 29 Oct 2008 14:40:27 +0000
+
 startup-notification (0.9-1.slind1) unstable; urgency=low
 
   * Using cdbs-slind
